@@ -16,12 +16,13 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
-nav a.current {
+nav a.current a:hover {
+    text-decoration: none;
     color:#ec008c;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #ec008c;
 }
 h1 {
     font-size: 3em;

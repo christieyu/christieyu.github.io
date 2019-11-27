@@ -51,16 +51,31 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-#containerfull {
+.containerfull {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     animation-name: body;
     animation-duration: 2s;
 }
+
+.containerleft {
+    position: relative;
+    float: left;
+    width: 70%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.containerright {
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 @keyframes body {
     from {opacity: 20%}
     to {opacity: 100%}
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
 }

@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
 body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
     margin: 60px auto;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
 nav ul li, footer ul li {
+    font-family: 'Source Sans Pro', sans-serif;
     display: inline;
     margin-right: 20px;
 }
@@ -21,9 +26,13 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h1.myname {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
 }
 p {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;

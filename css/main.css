@@ -36,6 +36,10 @@ h1 {
     margin: -5px;
     font-size: 65px;
     font-weight: 600;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 }
 p {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;

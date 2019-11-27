@@ -1,38 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
-    font-family: 'Source Sans Pro', sans-serif;
+nav ul {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
     padding: 0px;
+    margin-top: -5px;
     list-style: none;
-    font-weight: bold;
+    font-weight: noml;
 }
-nav ul li, footer ul li {
-    font-family: 'Source Sans Pro', sans-serif;
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: black;
 }
 a:hover {
     text-decoration: underline;
+    color: #ec008c;
 }
 h1 {
     font-size: 3em;
 }
-h1.myname {
-    font-family: 'Source Sans Pro', sans-serif;
+#myname {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    margin: -5px;
+    font-size: 65px;
     font-weight: 600;
 }
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
@@ -40,13 +42,4 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }

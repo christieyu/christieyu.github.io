@@ -21,10 +21,11 @@ a {
     color: black;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #ec008c;
 }
-a:target {
+a:active {
+    text-decoration: none;
     color: #ec008c;
 }
 h1 {

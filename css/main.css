@@ -24,6 +24,9 @@ a:hover {
     text-decoration: underline;
     color: #ec008c;
 }
+a:target {
+    color: #ec008c;
+}
 h1 {
     font-size: 3em;
 }

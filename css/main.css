@@ -17,8 +17,6 @@ nav ul {
     margin-top: -5px;
     list-style: none;
     font-weight: noml;
-    animation-name: nav;
-    animation-duration: 1.5s;
 }
 @keyframes nav {
     from {margin-left: -60px; opacity: 20%}
@@ -48,8 +46,6 @@ h1 {
     margin: -5px;
     font-size: 65px;
     font-weight: 600;
-    animation-name: myname;
-    animation-duration: 1.5s;
 }
 @keyframes myname {
     from {margin-left: -60px; opacity: 20%}

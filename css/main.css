@@ -16,6 +16,12 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
 nav a.current a:hover {
     text-decoration: none;
     color:#ec008c;

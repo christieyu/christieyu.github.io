@@ -4,14 +4,26 @@ body {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     margin: 60px auto;
     width: 70%;
+    animation-name: body;
+    animation-duration: 3s;
 }
+@keyframes body {
+    from {opacity: 20%}
+    to {opacity: 100%}
+    }
 nav ul {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     padding: 0px;
     margin-top: -5px;
     list-style: none;
     font-weight: noml;
+    animation-name: nav;
+    animation-duration: 1.5s;
 }
+@keyframes nav {
+    from {margin-left: -60px; opacity: 20%}
+    to {margin-left: 0px; opacity: 100%}
+    }
 nav ul li {
     display: inline;
     margin-right: 20px;
@@ -36,11 +48,13 @@ h1 {
     margin: -5px;
     font-size: 65px;
     font-weight: 600;
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+    animation-name: myname;
+    animation-duration: 1.5s;
 }
+@keyframes myname {
+    from {margin-left: -60px; opacity: 20%}
+    to {margin-left: -5px; opacity: 100%}
+    }
 p {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 1.5em;

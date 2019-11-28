@@ -107,8 +107,12 @@ footer{
 .pink {
     color: #ec008c;
 }
-
 b {
     color: black;
     font-weight: 600;
+}
+
+.resume {
+    display:block;
+    width:100%;
 }

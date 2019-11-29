@@ -4,6 +4,7 @@
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 body {
+    box-sizing: none;
     margin: 60px auto;
     width: 70%;
 }

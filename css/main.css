@@ -7,7 +7,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul {
+#mynav ul {
     padding: 0px;
     margin-top: -5px;
     list-style: none;
@@ -16,15 +16,15 @@ nav ul {
     from {margin-left: -60px; opacity: 20%}
     to {margin-left: 0px; opacity: 100%}
 }
-nav ul li {
+#mynav ul li {
     display: inline;
     margin-right: 20px;
 }
-nav a:hover {
+#mynav a:hover {
     text-decoration: none;
     color:#ec008c;
 }
-nav a {
+#mynav a {
     text-decoration: none;
     color: black;
 }

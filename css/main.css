@@ -7,11 +7,6 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
-}
 #mynav ul {
     padding: 0px;
     margin-top: -5px;

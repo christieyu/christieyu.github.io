@@ -4,9 +4,13 @@
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 body {
-    box-sizing: none;
     margin: 60px auto;
     width: 70%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: none;
 }
 #mynav ul {
     padding: 0px;

@@ -10,7 +10,7 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: none;
+  box-sizing: content-box;
 }
 #mynav ul {
     padding: 0px;

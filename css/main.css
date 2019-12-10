@@ -7,9 +7,6 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-#mynav {
-  height: 97px !important;
-}
 #mynav ul {
     padding: 0px !important;
     margin-top: -5px !important;

@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     margin: 60px auto;
@@ -134,7 +135,7 @@ b {
   z-index: 99; /* Make sure it does not overlap */
   border: solid 1pt;
   border-color: #ec008c;
-  outline: solid;
+  outline: none;
   background-color: white; /* Set a background color */
   color: #ec008c; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */

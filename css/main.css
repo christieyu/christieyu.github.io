@@ -8,8 +8,8 @@ body {
     width: 70%;
 }
 #mynav ul {
-    padding: 0px;
-    margin-top: -5px;
+    padding: 0px !important;
+    margin-top: -5px !important;
     list-style: none;
 }
 @keyframes nav {
@@ -18,7 +18,7 @@ body {
 }
 #mynav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 20px !important;
 }
 #mynav a:hover {
     text-decoration: none;

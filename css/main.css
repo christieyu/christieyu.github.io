@@ -139,7 +139,8 @@ b {
   background-color: white; /* Set a background color */
   color: #ec008c; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding-left: 10px; /* Some padding */
+  padding-right: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }

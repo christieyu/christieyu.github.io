@@ -8,6 +8,7 @@ body {
     width: 70%;
 }
 #mynav ul {
+    box-sizing: content-box !important;
     padding: 0px !important;
     margin-top: -5px !important;
     list-style: none;

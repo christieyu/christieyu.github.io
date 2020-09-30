@@ -32,7 +32,7 @@ body {
     color: black;
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #ec008c;
 }
 h1 {

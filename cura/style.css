@@ -1,0 +1,63 @@
+/* public/style.css */
+
+@font-face {
+    font-family: "Yu Gothic-Regular";
+    src: url('yugothic.ttf') format('truetype');
+}
+
+/* variables */
+:root {
+    --black: 
+    rgba(0, 0, 0, 1);
+    --darkgrey: 
+    rgba(125, 125, 125, 1);
+    --persimmon: 
+    rgb(247, 105, 86);
+    --grey: 
+    rgba(255, 255, 255, 0.851);
+    --white: 
+    rgba(255, 255, 255, 1);
+  
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 48px;
+    --font-size-xxxl: 96px;
+  
+    --font-family-yu_gothic-regular: "Yu Gothic-Regular";
+}
+
+body {
+    color: var(--black);
+    font-family: var(--font-family-yu_gothic-regular);
+    font-size: var(--font-size-l);
+}
+
+div.nav-bar {
+    height: 10%; width: 90%;
+    left: 5%; top: 5%;
+    position: absolute;
+}
+
+div.content {
+    height: 80%; width: 90%;
+    left: 5%; top: 18%;
+    position: absolute;
+}
+
+p.title {
+    font-weight: 600;
+}
+
+p.adviser {
+    color: var(--darkgrey);
+    font-size: var(--font-size-s);
+    /* font-style: italic; */
+    line-height: 0.8;
+}
+
+p.abstract {
+    font-size: var(--font-size-m);
+}

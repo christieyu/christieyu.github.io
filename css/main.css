@@ -55,20 +55,15 @@ body {
 #iconbar {
     position: relative;
     float: right;
-    width: 20%;
+    width: 25%;
     padding: 0;
     padding-top: 2.5%;
 }
 
-#iconbar ul {
-    padding: 0% !important;
-    margin: auto !important;
-    list-style: none;
-}
-
-#iconbar ul li {
-    display: inline;
-    margin-right: 2.5% !important;
+#icon {
+    width: 20%;
+    float: left;
+    margin-right: 2.5%;
 }
 
 a {

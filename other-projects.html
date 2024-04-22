@@ -13,12 +13,18 @@
         <nav id="mynav">
             <span id="myname"><a href="/">CHRISTIE YU</a></span>
             <div id="iconbar">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/christieyu/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn" style="width:20%" onmouseover="this.src='/images/icons/linkedin-2.png';" onmouseout="this.src='/images/icons/linkedin.png';"></a></li>
-                    <li><a href="https://github.com/christieyu?tab=repositories" target="_blank"><img src="/images/icons/github.png" alt="GitHub" style="width:20%" onmouseover="this.src='/images/icons/github-2.png';" onmouseout="this.src='/images/icons/github.png';"></a></li>
-                    <li><a href="https://www.instagram.com/artmiesa/" target="_blank"><img src="/images/icons/instagram.png" alt="Instagram" style="width:20%" onmouseover="this.src='/images/icons/instagram-2.png';" onmouseout="this.src='/images/icons/instagram.png';"></a></li>
-                    <li><a href="mailto:christieyu@aya.yale.edu" target="_blank"><img src="/images/icons/gmail.png" alt="Gmail" style="width:20%" onmouseover="this.src='/images/icons/gmail-2.png';" onmouseout="this.src='/images/icons/gmail.png';"></a></li>
-                </ul>
+                <div id="icon">
+                    <a href="https://www.linkedin.com/in/christieyu/" target="_blank"><dotlottie-player src="https://lottie.host/44f77d4c-e24c-46cc-9433-bda7a294330a/cuJ9j4VxG5.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://github.com/christieyu?tab=repositories" target="_blank"><dotlottie-player src="https://lottie.host/6c4ed393-921c-41d9-a1eb-124654dad099/KaHhNWt6wh.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://www.instagram.com/artmiesa/" target="_blank"><dotlottie-player src="https://lottie.host/16434b6e-618e-4d43-81d8-bc48d13a5454/zDIKXpSPjx.json" background="transparent" speed=".5" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://christieyu.com/contact"><dotlottie-player src="https://lottie.host/e949f842-6364-4c60-8b7d-cc278c8b1d8e/lvHGbFGrDt.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
             </div>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -151,36 +157,36 @@
 		</div>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <footer></footer>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-
-            //Get the button:
-            mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-
-        </script>
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </html>

@@ -1,297 +1,424 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Christie Yu</title>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
+    <head>
+        <title>Christie Yu</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
 
-<body>
-	<nav id="mynav">
-		<span id="myname"><a href="/">CHRISTIE YU</a></span>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="http://bit.ly/christieyu-resume-0923">Resume</a></li>
-			<li><a href="/portfolio" style="color:#ec008c">Portfolio</a></li>
-			<li><a href="https://github.com/christieyu?tab=repositories" target="_blank">GitHub</a></li>
-			<li><a href="/contact">Contact</a></li>
-		</ul>
-	</nav>
-	<div class="dropdown float-right">
-		<button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-			Jump to...
-		</button>
-		<div class="dropdown-menu dropdown-menu-right">
-			<a class="dropdown-item btn-sm" href="#redvelvet">Red Velvet!</a>
-			<a class="dropdown-item btn-sm" href="#intro">Introduction to Cake</a>
-			<a class="dropdown-item btn-sm" href="#power">Use Case 1: Power Settings</a>
-			<a class="dropdown-item btn-sm" href="#hscan">Use Case 2: Hardware Scan</a>
-		</div>
-	</div>
-	<br>
-	<div id="containerfull">
-		<div style="padding:5px"></div>
-		<a id="redvelvet">
-			<div style="padding:5px"></div>
-		</a>
-		<p class="text-5">2024 update:  Now baking... Red Velvet!</p>
-		<p class="text-3">
-			As of October 2023, I have been working on developing my very own sub-system of Cake, called Red Velvet.
-			<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-				<center>
-					<figure style="margin:0">
-						<a href="images/lenovo/red-velvet.png" target="_blank"><img src="/images/lenovo/red-velvet.png" alt="Image could not be loaded." style="width:98%; margin-bottom:5px"></a>
-						<figcaption class="text-1"><i>A little taste of Red Velvet.</i></figcaption>
-					</figure>
-				</center>
-			</div>
-		</p>
-		<p class="text-3">
-			<br><br>
-			With all the knowledge I've gained from working on Cake with my design colleagues, I've been architecting Red Velvet from the ground up for a whole new user base.
-			<br><br>
-			Red Velvet uses the foundational tokens of Cake (hence why it's a "sub-system") — but owns a totally fresh set of components & variants, since it is geared toward cloud-based apps, such as <a href="https://www.lenovo.com/us/en/software/lenovo-device-manager/" target="_blank">Lenovo Device Manager</a>. These apps, while being more commercial & B2B-facing, still could use a consumer-friendly design rehaul.
-			<br><br>
-			As the <b>product owner and sole creator</b> of Red Velvet, those considerations will be heavy in my thoughts for the next few months! More to come.
-			<br><br>
-			<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-				<center>
-					<figure style="margin:0">
-						<a href="images/lenovo/RV-modal.png" target="_blank"><img src="/images/lenovo/RV-modal.png" alt="Image could not be loaded." style="width:58%; margin-bottom:5px"></a>
-						<figcaption class="text-1"><i>OK, one more taste of Red Velvet...</i></figcaption>
-					</figure>
-				</center>
-			</div>
-			<br><br>
-			<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-				<center>
-					<figure style="margin:0">
-						<a href="images/lenovo/LDM-1.png" target="_blank"><img src="/images/lenovo/LDM-1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-						<a href="images/lenovo/LDM-2.png" target="_blank"><img src="/images/lenovo/LDM-2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-						<figcaption class="text-1"><i>Old LDM on the left, new & Red-Velvet-ified LDM wireframe on the right. Cake will take over the world!</i></figcaption>
-					</figure>
-				</center>
-			</div>
-		</p>
-		<br><br>
-		<hr>
-		<a id="intro">
-			<div style="padding:5px"></div>
-		</a>
-		<p class="text-5">Architecting Cake:  “Baking” a design system from scratch</p>
-		<p class="text-3">
-			Most people are familiar with Lenovo as a hardware company. But, as Lenovo moves deeper into the device ecosystem space — producing tablets & Motorola phones on top of its famous “Think” PC line — its enterprise software apps (Lenovo Vantage, Lenovo Freestyle, Legion Gaming, Motorola Ready-For) are more and more what customers “feel” when they think about Lenovo.
-			<br><br>
-			It makes sense, then, that as part of the newest "<a href="https://news.lenovo.com/pressroom/press-releases/global-everything-as-a-service-strategy/" target="_blank">One Lenovo</a>" push, one of Lenovo leadership’s major priorities is unifying Lenovo’s software design systems.
-			<br><br>
-			I was lucky enough to get the chance to push that project forward when I rotated onto Diana Gerli’s <b>Software UX team</b> in Lenovo’s Intelligent Devices Group (IDG) in February of 2023. Her team has done amazing work, like transforming old-style Vantage into “new” Vantage, using their new design system, <b>Cake</b>, on Figma.
-			<br><br>
-		</p>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/vantage-old.png" target="_blank"><img src="/images/lenovo/vantage-old.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<a href="images/lenovo/vantage-cake.png" target="_blank"><img src="/images/lenovo/vantage-cake.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>“Old” Vantage on the left, “new” Vantage on the right. You can see that Cake applies modern, dynamic, modular design to a somewhat outdated dashboard.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br>
-		<p class="text-3">
-			<a href="https://www.lenovo.com/us/en/software/vantage/" target="_blank">Vantage</a> is an onboarding app that comes with all Lenovo devices. It has over 3.3 million usership per day, largely in the China geo. It helps monitor device health and has immediate support for Lenovo-related services, like warranties and parts purchases. It has badly needed a design overhaul to match Lenovo’s vision for innovation.
-			<br><br>
-			I arrived onto this project when the dashboard above had just been released for production by Software UX. Much of my work on the team focused on redesigning Vantage settings, which makes up the largest portion of Vantage functionality – not only “reskinning” it, so to speak, but <b>really investigating current consumer pain points and inefficiencies</b> with the app.
-			<br><br>
-			In doing so, I quickly realized that we needed to progress Cake – as of then only a partially fleshed-out design system – to keep up with the speed at which we were remaking Vantage. Not only that, some major systemic infrastructure work had to take place.
-			<br><br>
-			Along with my co-architects Mike DeMar and Mallory Schultz, we formed a <b>3-person hyper task squad</b> establishing foundations and components of Cake, working in parallel as we tackled major Vantage tasks.
-			<br><br>
-		</p>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/cake-type.png" target="_blank"><img src="/images/lenovo/cake-type.png" alt="Image could not be loaded." style="width:85%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>We started with building what we saw as “foundations,” like these typography tokens.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/cake-color1.png" target="_blank"><img src="/images/lenovo/cake-color1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<a href="images/lenovo/cake-color2.png" target="_blank"><img src="/images/lenovo/cake-color2.png" alt="Image could not be loaded." style="width:32%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Color was another major focus. We delved deeply into the world of dark mode theming and high-contrast theming. Luckily for us, Figma rolled out their 2023 update, which included extremely critical color variable & layer theming functionalities.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/cake-checkboxes.png" target="_blank"><img src="/images/lenovo/cake-checkboxes.png" alt="Image could not be loaded." style="width:32%; margin-bottom:3px"></a>
-					<a href="images/lenovo/cake-button.png" target="_blank"><img src="/images/lenovo/cake-button.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
-					<a href="images/lenovo/cake-inputs.png" target="_blank"><img src="/images/lenovo/cake-inputs.png" alt="Image could not be loaded." style="width:32%; margin-bottom:5px"></a>
-					<a href="images/lenovo/cake-modals.png" target="_blank"><img src="/images/lenovo/cake-modals.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Then, we used Brad Frost’s <a href="https://atomicdesign.bradfrost.com/chapter-2/" target="_blank">“Atomic Theory”</a> of design to start making “atoms” – such as checkboxes and buttons – as well as “molecules” – e.g. inputs and modals.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br>
-		<p class="text-3">
-			Being a UX architect involves a somewhat different skillset than a visual designer, interaction designer, UX researcher, or UX writer. I called upon my front-end engineering skills to coordinate closely with our development team, creating pipelines from Figma to GitHub and GitHub to documentation. We experimented with platforms like <a href="https://storybook.js.org/" target="_blank">Storybook</a>, <a href="https://zeroheight.com/" target="_blank">ZeroHeight</a>, and <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>. Each token we created was not just a design choice but a design product – <b>optimization</b> & <b>longevity</b> were always at the forefront of our minds as we developed this design system from the ground up. In many ways, we were product owners as well as designers.
-			<br><br>
+    <body>
+        <nav id="mynav">
+            <span id="myname"><a href="/">CHRISTIE YU</a></span>
+            <div id="iconbar">
+                <div id="icon">
+                    <a href="https://www.linkedin.com/in/christieyu/" target="_blank"><dotlottie-player src="https://lottie.host/44f77d4c-e24c-46cc-9433-bda7a294330a/cuJ9j4VxG5.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://github.com/christieyu?tab=repositories" target="_blank"><dotlottie-player src="https://lottie.host/6c4ed393-921c-41d9-a1eb-124654dad099/KaHhNWt6wh.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://www.instagram.com/artmiesa/" target="_blank"><dotlottie-player src="https://lottie.host/16434b6e-618e-4d43-81d8-bc48d13a5454/zDIKXpSPjx.json" background="transparent" speed=".5" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+                <div id="icon">
+                    <a href="https://christieyu.com/contact"><dotlottie-player src="https://lottie.host/e949f842-6364-4c60-8b7d-cc278c8b1d8e/lvHGbFGrDt.json" background="transparent" playMode="bounce" hover></dotlottie-player></a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://bit.ly/christie-resume" target="_blank">Resume</a></li>
+                <li><a href="/portfolio" style="color:#ec008c">Portfolio</a></li>
+                <li><a href="https://github.com/christieyu?tab=repositories" target="_blank">GitHub</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown float-right">
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                Jump to...
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item btn-sm" href="#intro">Introduction to Cake</a>
+                <a class="dropdown-item btn-sm" href="#power">Use Case 1: Power Settings</a>
+                <a class="dropdown-item btn-sm" href="#hscan">Use Case 2: Hardware Scan</a>
+                <a class="dropdown-item btn-sm" href="#redvelvet">Red Velvet!</a>
+                <a class="dropdown-item btn-sm" href="#ldm">Use Case 3: LDM</a>
+                <a class="dropdown-item btn-sm" href="#student">Use Case 4: Classroom Companion</a>
+            </div>
+        </div>
+        <br>
+        <div id="containerfull">
+            <div style="padding:5px"></div>
+            <a id="intro">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">Architecting Cake: “Baking” a design system from scratch</p>
+            <p class="text-3">
+                Most people are familiar with Lenovo as a hardware company. But, as Lenovo moves deeper into the device ecosystem space — producing tablets & Motorola phones on top of its famous “Think” PC line — its enterprise software apps (Lenovo Vantage, Lenovo Freestyle, Legion Gaming, Motorola Ready-For) are more and more what customers “feel” when they think about Lenovo.
+                <br><br>
+                It makes sense, then, that as part of the newest "<a href="https://news.lenovo.com/pressroom/press-releases/global-everything-as-a-service-strategy/" target="_blank">One Lenovo</a>" push, one of Lenovo leadership’s major priorities is unifying Lenovo’s software design systems.
+                <br><br>
+                I was lucky enough to get the chance to push that project forward when I rotated onto Diana Gerli’s <b>Software UX team</b> in Lenovo’s Intelligent Devices Group (IDG) in February of 2023. Her team has done amazing work, like transforming old-style Vantage into “new” Vantage, using their new design system, <b>Cake</b>, on Figma.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/vantage-old.png" target="_blank"><img src="/images/lenovo/vantage-old.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/vantage-cake.png" target="_blank"><img src="/images/lenovo/vantage-cake.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>“Old” Vantage on the left, “new” Vantage on the right. You can see that Cake applies modern, dynamic, modular design to a somewhat outdated dashboard.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br>
+            <p class="text-3">
+                <a href="https://www.lenovo.com/us/en/software/vantage/" target="_blank">Vantage</a> is an onboarding app that comes with all Lenovo devices. It has over 3.3 million usership per day, largely in the China geo. It helps monitor device health and has immediate support for Lenovo-related services, like warranties and parts purchases. It has badly needed a design overhaul to match Lenovo’s vision for innovation.
+                <br><br>
+                I arrived onto this project when the dashboard above had just been released for production by Software UX. Much of my work on the team focused on redesigning Vantage settings, which makes up the largest portion of Vantage functionality – not only “reskinning” it, so to speak, but <b>really investigating current consumer pain points and inefficiencies</b> with the app.
+                <br><br>
+                In doing so, I quickly realized that we needed to progress Cake – as of then only a partially fleshed-out design system – to keep up with the speed at which we were remaking Vantage. Not only that, some major systemic infrastructure work had to take place.
+                <br><br>
+                Along with my co-architects Mike DeMar and Mallory Schultz, we formed a <b>3-person hyper task squad</b> establishing foundations and components of Cake, working in parallel as we tackled major Vantage tasks.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/cake-type.png" target="_blank"><img src="/images/lenovo/cake-type.png" alt="Image could not be loaded." style="width:85%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>We started with building what we saw as “foundations,” like these typography tokens.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/cake-color1.png" target="_blank"><img src="/images/lenovo/cake-color1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/cake-color2.png" target="_blank"><img src="/images/lenovo/cake-color2.png" alt="Image could not be loaded." style="width:32%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Color was another major focus. We delved deeply into the world of dark mode theming and high-contrast theming. Luckily for us, Figma rolled out their 2023 update, which included extremely critical color variable & layer theming functionalities.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/cake-checkboxes.png" target="_blank"><img src="/images/lenovo/cake-checkboxes.png" alt="Image could not be loaded." style="width:32%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/cake-button.png" target="_blank"><img src="/images/lenovo/cake-button.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/cake-inputs.png" target="_blank"><img src="/images/lenovo/cake-inputs.png" alt="Image could not be loaded." style="width:32%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/cake-modals.png" target="_blank"><img src="/images/lenovo/cake-modals.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Then, we used Brad Frost’s <a href="https://atomicdesign.bradfrost.com/chapter-2/" target="_blank">“Atomic Theory”</a> of design to start making “atoms” – such as checkboxes and buttons – as well as “molecules” – e.g. inputs and modals.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br>
+            <p class="text-3">
+                Being a UX architect involves a somewhat different skillset than a visual designer, interaction designer, UX researcher, or UX writer. I called upon my front-end engineering skills to coordinate closely with our development team, creating pipelines from Figma to GitHub and GitHub to documentation. We experimented with platforms like <a href="https://storybook.js.org/" target="_blank">Storybook</a>, <a href="https://zeroheight.com/" target="_blank">ZeroHeight</a>, and <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>. Each token we created was not just a design choice but a design product – <b>optimization</b> & <b>longevity</b> were always at the forefront of our minds as we developed this design system from the ground up. In many ways, we were product owners as well as designers.
+                <br><br>
 
-		</p>
-		<hr>
-		<a id="power">
-			<div style="padding:5px"></div>
-		</a>
-		<p class="text-5">Use Case 1: Vantage Power Settings redesign</p>
-		<p class="text-3">
-			Power is one of the most complex settings pages on Vantage. With huge variety between PC verticals on what “smart power” settings are offered, what types of battery warranties are possible, what kind of battery metrics are measured, etc, the Power page required a lot of consideration for <b>modularity</b>, <b>customizability</b>, and <b>clarity</b>.
-			<br><br>
-		</p>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/battery-brainstorm.png" target="_blank"><img src="/images/lenovo/battery-brainstorm.png" alt="Image could not be loaded." style="width:35%; margin-bottom:5px"></a>
-					<a href="images/lenovo/battery-3amigos.png" target="_blank"><img src="/images/lenovo/battery-3amigos.png" alt="Image could not be loaded." style="width:63%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Power page grooming/3-amigos meetings often resulted in spreads like this. Definitely a strong candidate for Charlie Day meme usage.</i></figcaption>
-				</figure>
-				<br><br>
-				<figure style="margin:0">
-					<a href="images/lenovo/battery-meme.png" target="_blank"><img src="/images/lenovo/battery-meme.png" alt="Image could not be loaded." style="width:65%; margin-bottom:5px"></a>
-				</figure>
-			</center>
-		</div>
-		<br>
-		<p class="text-3">Our drafts & iteration process looked something like this:</p>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/battery-old1.png" target="_blank"><img src="/images/lenovo/battery-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
-					<a href="images/lenovo/battery-old2.png" target="_blank"><img src="/images/lenovo/battery-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
-					<a href="images/lenovo/battery-details.png" target="_blank"><img src="/images/lenovo/battery-details.png" alt="Image could not be loaded." style="width:98%; margin-bottom:5px"></a>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		<p class="text-3">And here’s what we finally came up with.</p>
-		<br><br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/battery-final.png" target="_blank"><img src="/images/lenovo/battery-final.png" alt="Image could not be loaded." style="width:75%; margin-bottom:5px"></a>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		</p>
-		<hr>
-		<a id="hscan">
-			<div style="padding:5px"></div>
-		</a>
-		<p class="text-5">Use Case 2: Vantage Hardware Scan</p>
-		<p class="text-3">
-			Another major Vantage functionality is Hardware Scan, which is tricky from a design perspective because of how much data has to be crammed into one view. We had to be creative with patterns like accordions & modals in order to extract content into <b>readable & logical information hierarchies</b>.
-			<br><br>
-		</p>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/hscan-og1.png" target="_blank"><img src="/images/lenovo/hscan-og1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
-					<a href="images/lenovo/hscan-old0.png" target="_blank"><img src="/images/lenovo/hscan-old0.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
-					<a href="images/lenovo/hscan-old1.png" target="_blank"><img src="/images/lenovo/hscan-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<a href="images/lenovo/hscan-old2.png" target="_blank"><img src="/images/lenovo/hscan-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Here is another example of the “Cake-ification” of old Vantage design.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		<p class="text-3">And here is what we landed on.</p>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/hscan-final1.png" target="_blank"><img src="/images/lenovo/hscan-final1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<a href="images/lenovo/hscan-final2.png" target="_blank"><img src="/images/lenovo/hscan-final2.png" alt="Image could not be loaded." style="width:20%; margin-bottom:5px"></a>
-					<a href="images/lenovo/hscan-final3.png" target="_blank"><img src="/images/lenovo/hscan-final3.png" alt="Image could not be loaded." style="width:20%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Some examples of our modal & pull-out accordion behavior.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		<p class="text-3">And within Hardware Scan were other tools such as Snapshot, which allows users to compare before and after scans of their hardware & software. This was particularly data heavy.</p>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/snapshot-old1.png" target="_blank"><img src="/images/lenovo/snapshot-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<a href="images/lenovo/snapshot-old2.png" target="_blank"><img src="/images/lenovo/snapshot-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>More Cake-ification.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		<p class="text-3">The final product:</p>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/snapshot-final.png" target="_blank"><img src="/images/lenovo/snapshot-final.png" alt="Image could not be loaded." style="width:65%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>It’s tricky to keep information aligned in a clean way when you have so many functionalities in one view.</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br><br>
-		<p class="text-3">Hardware Scan had so many micro-functionalities and requirements that our Figma spread looked something like this on our last iteration:</p>
-		<br>
-		<div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
-			<center>
-				<figure style="margin:0">
-					<a href="images/lenovo/hscan-complexities.png" target="_blank"><img src="/images/lenovo/hscan-complexities.png" alt="Image could not be loaded." style="width:75%; margin-bottom:5px"></a>
-					<figcaption class="text-1"><i>Caption: A lot of blood, sweat, and tears!</i></figcaption>
-				</figure>
-			</center>
-		</div>
-		<br><br><br><br>
-		</p>
-	</div>
-	</div>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<footer></footer>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-		//Get the button:
-		mybutton = document.getElementById("myBtn");
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {
-			scrollFunction()
-		};
+            </p>
+            <hr>
+            <a id="power">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">Use Case 1: Vantage Power Settings redesign</p>
+            <p class="text-3">
+                Power is one of the most complex settings pages on Vantage. With huge variety between PC verticals on what “smart power” settings are offered, what types of battery warranties are possible, what kind of battery metrics are measured, etc, the Power page required a lot of consideration for <b>modularity</b>, <b>customizability</b>, and <b>clarity</b>.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/battery-brainstorm.png" target="_blank"><img src="/images/lenovo/battery-brainstorm.png" alt="Image could not be loaded." style="width:35%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/battery-3amigos.png" target="_blank"><img src="/images/lenovo/battery-3amigos.png" alt="Image could not be loaded." style="width:63%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Power page grooming/3-amigos meetings often resulted in spreads like this. Definitely a strong candidate for Charlie Day meme usage.</i></figcaption>
+                    </figure>
+                    <br><br>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/battery-meme.png" target="_blank"><img src="/images/lenovo/battery-meme.png" alt="Image could not be loaded." style="width:65%; margin-bottom:5px"></a>
+                    </figure>
+                </center>
+            </div>
+            <br>
+            <p class="text-3">Our drafts & iteration process looked something like this:</p>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/battery-old1.png" target="_blank"><img src="/images/lenovo/battery-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/battery-old2.png" target="_blank"><img src="/images/lenovo/battery-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/battery-details.png" target="_blank"><img src="/images/lenovo/battery-details.png" alt="Image could not be loaded." style="width:98%; margin-bottom:5px"></a>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">And here’s what we finally came up with.</p>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/battery-final.png" target="_blank"><img src="/images/lenovo/battery-final.png" alt="Image could not be loaded." style="width:75%; margin-bottom:5px"></a>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <hr>
+            <a id="hscan">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">Use Case 2: Vantage Hardware Scan</p>
+            <p class="text-3">
+                Another major Vantage functionality is Hardware Scan, which is tricky from a design perspective because of how much data has to be crammed into one view. We had to be creative with patterns like accordions & modals in order to extract content into <b>readable & logical information hierarchies</b>.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/hscan-og1.png" target="_blank"><img src="/images/lenovo/hscan-og1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/hscan-old0.png" target="_blank"><img src="/images/lenovo/hscan-old0.png" alt="Image could not be loaded." style="width:49%; margin-bottom:3px"></a>
+                        <a href="images/lenovo/hscan-old1.png" target="_blank"><img src="/images/lenovo/hscan-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/hscan-old2.png" target="_blank"><img src="/images/lenovo/hscan-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Here is another example of the “Cake-ification” of old Vantage design.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">And here is what we landed on.</p>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/hscan-final1.png" target="_blank"><img src="/images/lenovo/hscan-final1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/hscan-final2.png" target="_blank"><img src="/images/lenovo/hscan-final2.png" alt="Image could not be loaded." style="width:20%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/hscan-final3.png" target="_blank"><img src="/images/lenovo/hscan-final3.png" alt="Image could not be loaded." style="width:20%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Some examples of our modal & pull-out accordion behavior.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">And within Hardware Scan were other tools such as Snapshot, which allows users to compare before and after scans of their hardware & software. This was particularly data heavy.</p>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/snapshot-old1.png" target="_blank"><img src="/images/lenovo/snapshot-old1.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/snapshot-old2.png" target="_blank"><img src="/images/lenovo/snapshot-old2.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>More Cake-ification.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">The final product:</p>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/snapshot-final.png" target="_blank"><img src="/images/lenovo/snapshot-final.png" alt="Image could not be loaded." style="width:65%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>It’s tricky to keep information aligned in a clean way when you have so many functionalities in one view.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">Hardware Scan had so many micro-functionalities and requirements that our Figma spread looked something like this on our last iteration:</p>
+            <br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/hscan-complexities.png" target="_blank"><img src="/images/lenovo/hscan-complexities.png" alt="Image could not be loaded." style="width:75%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Caption: A lot of blood, sweat, and tears!</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <hr>
+            <a id="redvelvet">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">2024 update: Now baking... Red Velvet!</p>
+            <p class="text-3">
+                As of October 2023, I have been working on developing my very own sub-system of Cake, called Red Velvet.
+                <br><br>
+                <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                    <center>
+                        <figure style="margin:0">
+                            <a href="images/lenovo/rv-cover.png" target="_blank"><img src="/images/lenovo/rv-cover.png" alt="Image could not be loaded." style="width:48%; margin-bottom:5px"></a>
+                        </figure>
+                    </center>
+                </div>
+                <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                    <center>
+                        <figure style="margin:0">
+                            <a href="images/lenovo/red-velvet.png" target="_blank"><img src="/images/lenovo/red-velvet.png" alt="Image could not be loaded." style="width:98%; margin-bottom:5px"></a>
+                            <figcaption class="text-1"><i>A little taste of Red Velvet.</i></figcaption>
+                        </figure>
+                    </center>
+                </div>
+            </p>
+            <p class="text-3">
+                <br><br>
+                With all the knowledge I've gained from working on Cake with my design colleagues, I've been architecting Red Velvet from the ground up for a whole new user base.
+                <br><br>
+                Red Velvet uses the foundational tokens of Cake (hence why it's a "sub-system") — but owns a totally fresh set of components & variants, since it is geared toward B2B cloud-based apps, such as <a href="https://www.lenovo.com/us/en/software/lenovo-device-manager/" target="_blank">Lenovo Device Manager</a>. These apps, while being more commercial-facing, could still use a consumer-friendly design rehaul.
+                <br><br>
+                One of the great things about designing a sub-system that relies on the Cake tokens I architected previously is that dark mode is essentially built into the components. This is super handy, as Microsoft is pushing for dark mode as an accessibility requirement for applications in 2025.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/rv-cal-light.png" target="_blank"><img src="/images/lenovo/rv-cal-light.png" alt="Image could not be loaded." style="width:45%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/rv-cal-dark.png" target="_blank"><img src="/images/lenovo/rv-cal-dark.png" alt="Image could not be loaded." style="width:45%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Here's the date/time picker up close. The component may be original, but its dependency on Cake color & type tokens means that it inherits theming as well!</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/rv-modal-light.png" target="_blank"><img src="/images/lenovo/rv-modal-light.png" alt="Image could not be loaded." style="width:39%; margin-bottom:5px"></a>
+                    <a href="images/lenovo/rv-modal-dark.png" target="_blank"><img src="/images/lenovo/rv-modal-dark.png" alt="Image could not be loaded." style="width:39%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Here's Red Velvet's complex modal template.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <hr>
+            <a id="ldm">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">Red Velvet use case 1: Lenovo Device Manager</p>
+            <p class="text-3">
+                One of my first applications of Red Velvet was testing a redesign of Lenovo Device Manager, one of the most popular B2B cloud apps that Lenovo offers. LDM offers IT admin a "quick-glance" method of surveying fleet health, with options to telescope into details at any level.
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/ldm-signin-light.png" target="_blank"><img src="/images/lenovo/ldm-signin-light.png" alt="Image could not be loaded." style="width:89%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>Since Cake has only been used on select Lenovo apps so far, I had to create lots of design patterns & flows from scratch, such as this sign-in flow that is now the Cake standard.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/ldm-table-light.png" target="_blank"><img src="/images/lenovo/ldm-table-light.png" alt="Image could not be loaded." style="width:92%; margin-bottom:0px"></a>
+                        <a href="images/lenovo/ldm-table-dark.png" target="_blank"><img src="/images/lenovo/ldm-table-dark.png" alt="Image could not be loaded." style="width:92%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>The main view of LDM is this device list. Since Cake has not yet met an application that requires lots of data visualization, I made these table templates from scratch for Red Velvet. Enhanced tags and chips provide information-at-a-glance, and opacity-based backgrounds help handle table row background variation. And, although Red Velvet uses squared buttons for a more tabular view, it retains the general modularity and card-based elevation schematic of Cake templates for "One Lenovo" consistency.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/ldm-profile-light.png" target="_blank"><img src="/images/lenovo/ldm-profile-light.png" alt="Image could not be loaded." style="width:92%; margin-bottom:0px"></a>
+                        <a href="images/lenovo/ldm-profile-dark.png" target="_blank"><img src="/images/lenovo/ldm-profile-dark.png" alt="Image could not be loaded." style="width:92%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>LDM also has a profile section. The user information section needed to be made from scratch, but I was able to borrow some of my past work with the Vantage app to lay out the settings pages.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/ldm-modals-light.png" target="_blank"><img src="/images/lenovo/ldm-modals-light.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <a href="images/lenovo/ldm-modals-dark.png" target="_blank"><img src="/images/lenovo/ldm-modals-dark.png" alt="Image could not be loaded." style="width:49%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>And here are some associated modals.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">
+                You can really tell from this side-by-side comparison how badly the design refresh was needed. Plus, we were able to add a dark mode in a snap!
+                <br><br>
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/ldm-compare.png" target="_blank"><img src="/images/lenovo/ldm-compare.png" alt="Image could not be loaded." style="width:99%; margin-bottom:5px"></a>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <hr>
+            <a id="student">
+                <div style="padding:5px"></div>
+            </a>
+            <p class="text-5">Red Velvet use case 2: Classroom Companion</p>
+            <p class="text-3">
+                A few weeks after my work with LDM, the Classroom Companion team at Lenovo reached out to me asking for some help with a rebrand as well. Their case was pretty unique, as their app is not only consumer-facing but student-facing, which has its own set of design challenges. They named a few PO requirements to me, such as promoting a chatbot view, which was intended to aid students as they listened to online course recordings. This chatbot was silo'ed into each course; the "Precalculus Companion" could not answer questions about Biology, for instance, and they wanted to make this clear visually.
+                <br><br>
+                As Red Velvet did not have an existing chatbot component (Lenovo has many AI apps in the works right now, but none based on the Red Velvet design system until this product), my first task at hand was to consolidate some past Lenovo chatbot views to create a "One Lenovo" standardized component.
+            </p>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/student-chatbot.png" target="_blank"><img src="/images/lenovo/student-chatbot.png" alt="Image could not be loaded." style="width:96%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>I used the four references on the left to create the chatbot component on the right. The leftmost reference image was a mockup given to me by the Classroom Companion team.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/student-chatbot-2.png" target="_blank"><img src="/images/lenovo/student-chatbot-2.png" alt="Image could not be loaded." style="width:90%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>You can see that my chatbot component integrates seamlessly into Red Velvet spreads, in both light and dark mode. I renamed the companion to "Precalculus Companion" to show even more clearly that the chatbot is silo'ed. Of course, that heading will be replaced for future applications of the chatbot component outside of Classroom Companion.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
+            <br><br>
+            <p class="text-3">
+                After creating the chatbot component, the rest of the redesign was fairly simple. Here is the final comparison, with mockups from the Classroom Companion team on the bottom row and my redesigns on the top row.
+            </p>
+            <div data-aos="fade-up" data-aos-offset="20" data-aos-delay="50" data-aos-duration="2000" style="height: auto; position: relative; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px">
+                <center>
+                    <figure style="margin:0">
+                        <a href="images/lenovo/student-compare.png" target="_blank"><img src="/images/lenovo/student-compare.png" alt="Image could not be loaded." style="width:99%; margin-bottom:5px"></a>
+                        <figcaption class="text-1"><i>One of the important UX guidelines I enforced was minimizability of the chatbot component. Even though PO's wanted as much promotion of the chatbot as possible, I maintained that students must be able to minimize it to stay focused in certain scenarios. As a compromise, we settled on keeping the chatbot open on default and providing a minimize button that shrank it into an avatar. You can also see that I customized the color of the "Precalculus Companion" icon to further demonstrate its silo'ed nature. Finally, I changed the course dashboard to provide space for more class specs, and color-coded each class to provide a sense of encapsulation per course. I also added potential to access archived course content.</i></figcaption>
+                    </figure>
+                </center>
+            </div>
 
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			} else {
-				mybutton.style.display = "none";
-			}
-		}
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0; // For Safari
-			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	</script>
-</body>
+            <br><br><br><br>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <footer></footer>
+    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
 
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </html>
